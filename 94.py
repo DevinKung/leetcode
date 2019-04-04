@@ -1,4 +1,5 @@
 中序遍历的顺序为左-根-右
+栈的思想
 
 class Solution:
     def inorderTraversal(self, root):
