@@ -4,6 +4,12 @@ Simple, understandable solution. In the loop: If we get a node with flag false, 
 
 If we get node with flag set to true we simply print its value (add to acc).
 Can be modified to do post and pre order too.
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 class Solution:
     def inorderTraversal(self, root):
         stack = [ (False, root) ]
