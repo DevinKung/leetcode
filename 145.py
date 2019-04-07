@@ -10,3 +10,16 @@ while循环的条件是栈不为空
 再看左子结点不为空的话，就加入栈
 
 another solution:
+ def postorderTraversal(self, root):
+        if not root: return []
+        result, stack = [], [root]
+        
+        while stack:
+            # pop the element from stack and push it into result stack
+            root = stack.pop()
+            result.append(root.val)
+            if root.left:
+                stack.append(root.left)
+            if root.right:
+                stack.append(root.right)
+        return result[::-1]
